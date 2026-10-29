@@ -15,6 +15,6 @@ jobs:
       - name: Install Qt bindings
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-pyqt6
+          sudo apt-get install -y python3-pyqt6 python3-pyqt6.qtquick
       - name: Test schema types and application filters
         run: /usr/bin/python3 -m unittest discover -s tests -p 'test_*.py' -v

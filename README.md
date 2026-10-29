@@ -60,7 +60,7 @@ Chromeの個別タブ・個別ウィンドウの音源を判別するもので�
 
 `bubblewrap`の独立したPID・マウント・ネットワーク・ユーザー名前空間の中で、専用D-Busと仮想画面のKWinを起動します。普段のホーム、`/run`の通知・セッション用ソケット、ホストのプロセスには接続しません。初回起動のウェルカム画面もテスト内では起動しません。`bubblewrap`が利用できなければテストを停止し、ホスト環境へフォールバックしません。
 
-依存パッケージは`bubblewrap`、KWin/Plasma、`python3-pyqt6`、`python3-dbus`です。Pythonの追加パッケージは不要です。
+依存パッケージは`bubblewrap`、KWin/Plasma、`python3-pyqt6`、`python3-pyqt6.qtquick`、`python3-dbus`です。Pythonの追加パッケージは不要です。
 
 - QtのJavaScriptエンジンで、対象ID・対象外・空文字・誤った部分一致を確認。
 - 実際のPlasmaタスク表示に、3つの検証用ウィンドウを表示。共有音声を模したテスト用モデルを使い、Chromeの音声マークが見え、Keep・カレンダーの音声マークが見えないことを確認。
