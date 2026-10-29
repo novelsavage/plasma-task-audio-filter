@@ -177,10 +177,7 @@ try:
     }
     for key, expected in cases.items():
         assert (
-            engine.globalObject()
-            .property("isExcluded")
-            .call([QJSValue(key)])
-            .toBool()
+            engine.globalObject().property("isExcluded").call([QJSValue(key)]).toBool()
             == expected
         ), key
     target = d / "data/plasma/plasmoids/org.novelsavage.plasma.taskaudiofilter"
