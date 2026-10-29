@@ -156,7 +156,7 @@ def evaluate(s):
 try:
     # Exercise filter using the real Qt JavaScript engine.
     from PyQt6.QtCore import QCoreApplication
-    from PyQt6.QtQml import QJSEngine
+    from PyQt6.QtQml import QJSEngine, QJSValue
 
     app = QCoreApplication([])
     engine = QJSEngine()
@@ -179,7 +179,7 @@ try:
         assert (
             engine.globalObject()
             .property("isExcluded")
-            .call([engine.toScriptValue(key)])
+            .call([QJSValue(key)])
             .toBool()
             == expected
         ), key

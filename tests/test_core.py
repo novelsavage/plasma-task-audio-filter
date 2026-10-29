@@ -8,7 +8,7 @@ from pathlib import Path
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
 from PyQt6.QtCore import QCoreApplication
-from PyQt6.QtQml import QJSEngine
+from PyQt6.QtQml import QJSEngine, QJSValue
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("manager", ROOT / "manage.py")
@@ -53,7 +53,7 @@ class AppFilterTest(unittest.TestCase):
         }
         for app_id, expected in cases.items():
             with self.subTest(app_id=app_id):
-                value = self.filter.call([self.engine.toScriptValue(app_id)])
+                value = self.filter.call([QJSValue(app_id)])
                 self.assertEqual(value.toBool(), expected)
 
 
