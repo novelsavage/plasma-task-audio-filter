@@ -1,0 +1,24 @@
+{
+  "KPlugin": {
+    "Id": "org.novelsavage.plasma.taskaudiofilter",
+    "Name": "Icons-Only Task Manager — Audio Filter",
+    "Name[ja]": "アイコンだけのタスクマネージャ（音声表示フィルター）",
+    "Description": "Keep and Calendar do not inherit the Chrome audio indicator",
+    "Description[ja]": "KeepとカレンダーをChromeの音声表示から除外",
+    "Icon": "preferences-system-windows",
+    "Category": "Windows and Tasks",
+    "License": "GPL-2.0-or-later",
+    "Version": "0.2.0",
+    "Authors": [
+      {
+        "Name": "Eike Hein and KDE contributors (upstream)"
+      }
+    ]
+  },
+  "X-Plasma-API-Minimum-Version": "6.0",
+  "X-Plasma-RootPath": "org.kde.plasma.taskmanager.so",
+  "X-Plasma-Provides": [
+    "org.kde.plasma.multitasking"
+  ],
+  "KPackageStructure": "Plasma/Applet"
+}

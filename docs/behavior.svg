@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+<rect width="800" height="320" rx="16" fill="#111827"/>
+<g font-family="sans-serif" fill="#e5e7eb">
+<text x="32" y="40" font-size="21">Chromeの音声表示からKeep・カレンダーを除外</text>
+<text x="32" y="83" font-size="15" fill="#9ca3af">標準の関連付けで誤表示が起きた場合</text>
+<text x="32" y="205" font-size="15" fill="#9ca3af">フィルター適用後</text>
+</g>
+<g font-family="sans-serif" font-size="18" text-anchor="middle">
+<g fill="#263347" stroke="#475569"><rect x="32" y="100" width="220" height="65" rx="10"/><rect x="290" y="100" width="220" height="65" rx="10"/><rect x="548" y="100" width="220" height="65" rx="10"/></g>
+<g fill="#e5e7eb"><text x="142" y="140">Chrome  ♪</text><text x="400" y="140">Keep  ♪</text><text x="658" y="140">カレンダー  ♪</text></g>
+<g fill="#163929" stroke="#4ade80"><rect x="32" y="220" width="220" height="65" rx="10"/></g>
+<g fill="#263347" stroke="#475569"><rect x="290" y="220" width="220" height="65" rx="10"/><rect x="548" y="220" width="220" height="65" rx="10"/></g>
+<g fill="#e5e7eb"><text x="142" y="260">Chrome  ♪</text><text x="400" y="260">Keep</text><text x="658" y="260">カレンダー</text></g>
+</g></svg>
